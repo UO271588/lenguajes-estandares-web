@@ -1,0 +1,42 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Header de la página*/
+header, h1{
+    background-color: lightgrey;
+    color: black;
+}
+
+h1 {
+    margin: 40px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: darkred;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a:link, a:visited, a:valid{
+    text-decoration: none;
+    background-color: darkred;
+    color: white;
+}

@@ -1,0 +1,14 @@
+/* Header de la página*/
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Barra de navegación */
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
