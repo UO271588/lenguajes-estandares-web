@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Roboto';
     src: url('./fonts/Roboto-Regular.ttf');
@@ -39,4 +38,11 @@ nav ul li a:link, a:visited, a:valid{
     text-decoration: none;
     background-color: darkred;
     color: white;
+}
+
+/* Seccion de perfil */
+img {
+    display: block;
+    width: max(100px,15%);
+    height: auto;
 }
