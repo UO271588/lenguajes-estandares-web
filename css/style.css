@@ -11,8 +11,8 @@ body{
 
 /* Header de la página*/
 header, h1{
-    background-color: lightgrey;
-    color: black;
+    color: lightgrey;
+    background-color: black;
 }
 
 h1 {
@@ -34,15 +34,50 @@ nav ul li {
     padding: 15px;
 }
 
+nav ul li.selected {
+    border-bottom: 5px solid white;
+    font-weight: bold;
+}
+
 nav ul li a:link, a:visited, a:valid{
     text-decoration: none;
     background-color: darkred;
     color: white;
 }
 
+
+
 /* Seccion de perfil */
+
+table {
+    border: 1px solid #B4BBC8;
+    background-color: #f9f9f9;
+    color: #000;
+    margin: 0.5em 0 0.7em 1.2em;
+}
+table th, table td {
+    text-align: left;
+    padding: 7px 10px;
+}
+
+table tr.tabletitle th{
+    text-align: center;
+    background-color: lightcoral;
+    color: black;
+    padding: 10px 10px;
+}
+
+table tr.center{
+    text-align: center;
+}
+
 img {
     display: block;
-    width: max(100px,15%);
-    height: auto;
+    width: 100%;
+}
+
+h2 {
+    border-bottom: 1px solid #eaecf0;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }

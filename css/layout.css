@@ -13,6 +13,19 @@ nav ul {
     gap: 5px;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.lateral-info{
+    width: max( 220px , 35vw );
+    position: relative;
+    float: left;
+    clear: left;
+}
+
 footer {
     display: flex;
     flex-direction: column;
