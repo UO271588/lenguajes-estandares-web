@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.ttf');
+}
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 2em;
+    margin-inline: 1em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 1em;
+    background-color: darkred;
+    color: white;
+    padding-inline: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+nav ul li a:link, nav ul li a:visited, nav ul li a:valid{
+    text-decoration: none;
+    background-color: darkred;
+    color: white;
+}
+
+p {
+    grid-column: span 2;
+}
+
+section:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+section:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    display: grid;
+    grid-template-columns: repeat(7, 375px); /* Dos columnas iguales */
+    overflow-y: auto;
+    grid-column-gap: 2em; /* Espacio entre columnas y filas */
+}
+
+section:nth-of-type(2) h2 {
+    grid-row: 1;
+    width: 100%;
+    position: sticky;
+    left:0;
+}
+  
+section:nth-of-type(2) h3{
+    grid-row: 2;  /* Asigna a las filas pares */
+    justify-self: center;
+}
+  
+section:nth-of-type(2) p {
+    grid-row: 3; /* Asigna a las filas impares */
+    grid-column: span 1;
+    justify-self: center;
+}
+
+article {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+aside {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    background-color: #000;
+    color:#fff;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+footer ul {
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+    gap: 2em;
+}
+
+footer ul li a:link, footer ul li a:visited, footer ul li a:valid{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
