@@ -46,8 +46,12 @@ nav ul li a:link, a:visited, a:valid{
 }
 
 
-
 /* Seccion de perfil */
+
+aside {
+    margin: 0.5em 0.5em 0 0.5em;
+    background-color: #f9f9f9;
+}
 
 table {
     background-color: #f9f9f9;
@@ -77,7 +81,7 @@ img {
     width: 300px;
 }
 
-section{
+section, article, aside{
     margin: 0.5em 0.5em 0 0.5em;
     background-color: #f9f9f9;
 }

@@ -20,7 +20,7 @@ main {
     align-items: flex-start;
 }
 
-.lateral-info{
+aside{
     grid-column:1;
     grid-row-start: 1;
     grid-row-end: 10;
@@ -46,18 +46,18 @@ body{
     flex-direction: column;
 }
 
-.galeria{
+article{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap:10px;
 }
 
-.galeria h2 {
+article h2 {
     width: 100%;
 }
 
-.galeria img{
+article img{
     aspect-ratio: 1;
     object-fit: contain;
     padding-left: 10px;
