@@ -25,21 +25,16 @@ nav {
     color: white;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0px;
-}
-
-nav ul li {
+nav {
     padding: 15px;
 }
 
-nav ul li.selected {
-    border-bottom: 5px solid white;
-    font-weight: bold;
+nav a {
+    padding: 7px 10px;
 }
 
-nav ul li a:link, a:visited, a:valid{
+nav a:link, nav a:visited, nav a:valid{
+    font-weight: bold;
     text-decoration: none;
     background-color: darkred;
     color: white;
@@ -47,33 +42,16 @@ nav ul li a:link, a:visited, a:valid{
 
 
 /* Seccion de perfil */
-
-aside {
-    margin: 0.5em 0.5em 0 0.5em;
-    background-color: #f9f9f9;
-}
-
-table {
-    background-color: #f9f9f9;
-    color: #000;
-    margin-right: -0.5em;
-    border-spacing: 0;
-}
-
-table th, table td {
-    text-align: left;
-    padding: 7px 10px;
-}
-
-table tr.tabletitle th{
-    text-align: center;
+h2 {
+    padding: 10px 10px;
+    margin:0;
     background-color: darkred;
     color: white;
-    padding: 10px 10px;
 }
 
-table tr.center{
-    text-align: center;
+p {
+    padding: 7px 10px;
+    font-size: 1em;
 }
 
 img {
@@ -82,21 +60,7 @@ img {
 }
 
 section, article, aside{
-    margin: 0.5em 0.5em 0 0.5em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
     background-color: #f9f9f9;
-}
-
-h2 {
-    padding: 10px 10px;
-    margin:0;
-    font-size: 16px;
-    background-color: darkred;
-    color: white;
-    font-weight: 700;
-    height: 18px;
-}
-
-p {
-    padding: 7px 10px;
-    margin:0;
+    color: black;
 }

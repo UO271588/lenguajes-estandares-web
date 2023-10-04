@@ -13,17 +13,17 @@ nav ul {
     gap: 5px;
 }
 
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 10px;
     align-items: flex-start;
-}
-
-aside{
-    grid-column:1;
-    grid-row-start: 1;
-    grid-row-end: 10;
 }
 
 footer {
@@ -39,26 +39,31 @@ footer {
     text-align: center;
 }
 
-body{
-    min-height: 100vh;
-    margin: 0;
+article:nth-of-type(1){
     display: flex;
     flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 10;
 }
 
-article{
+article:nth-of-type(1) img{
+    align-self: center;
+    margin: 1em 1em;
+}
+
+article:nth-of-type(2){
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap:10px;
 }
 
-article h2 {
+article:nth-of-type(2) h2 {
     width: 100%;
 }
 
-article img{
-    aspect-ratio: 1;
+article:nth-of-type(2) img{
+    aspect-ratio: 1/1;
     object-fit: contain;
     padding-left: 10px;
     margin-right: -10px;
