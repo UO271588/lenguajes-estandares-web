@@ -1,0 +1,17 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    align-self: center;
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin: 1em;
+}

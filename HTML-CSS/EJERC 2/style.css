@@ -19,12 +19,13 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 2em;
     margin-inline: 1em;
 }
 
 nav ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -36,6 +37,7 @@ nav ul {
     padding-top: 1em;
     padding-bottom: 1em;
     margin: 0;
+    justify-content: center;
 }
 
 nav ul li a:link, nav ul li a:visited, nav ul li a:valid{
@@ -44,13 +46,9 @@ nav ul li a:link, nav ul li a:visited, nav ul li a:valid{
     color: white;
 }
 
-p {
-    grid-column: span 2;
-}
-
 section {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
 }
 
 section:nth-of-type(1) {
@@ -58,41 +56,67 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(2) {
-    grid-row-start: 4;
-    display: grid;
-    grid-template-columns: repeat(7, 375px); /* Dos columnas iguales */
-    overflow-y: auto;
-    grid-column-gap: 2em; /* Espacio entre columnas y filas */
+    display:flex;
+    flex-direction: column;
 }
 
-section:nth-of-type(2) h2 {
-    grid-row: 1;
+section:nth-of-type(2) h3 {
+    text-align:center;
     width: 100%;
-    position: sticky;
-    left:0;
-}
-
-section:nth-of-type(2) h3{
-    grid-row: 2;  /* Asigna a las filas pares */
-    justify-self: center;
+    background-color:  maroon;
+    color: white;
+    padding: 0.5em 0;
+    border-radius: 1em 1em 0 0;
+    margin:0px;
 }
 
 section:nth-of-type(2) p {
-    grid-row: 3; /* Asigna a las filas impares */
-    grid-column: span 1;
-    justify-self: center;
+    text-align:center;
+    width: 100%;
+    background-color:  #dadada;
+    color: black;
+    padding: 0.8em 0;
+    border-radius: 0em 0em 1em 1em;
+    margin: 0px 0px 10px 0px;
 }
 
 article {
     grid-row-start: 1;
     grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 aside {
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
+}
+
+aside ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:0.5em
+}
+
+aside ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #dadada;
+    color: black;
+    border-radius: 0.5em;
+    padding-top: 1em;
+}
+
+aside ul li img{ 
+    width: 200px;
+    aspect-ratio: 4/2;
+    object-fit: contain;
+    margin: 1em;
 }
 
 footer {
