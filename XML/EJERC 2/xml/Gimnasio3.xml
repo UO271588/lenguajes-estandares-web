@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gimnasio SYSTEM "../dtd/gimnasio.dtd">
+<gimnasio xmlns="http://tempuri.org/gimnasio"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://tempuri.org/gimnasio ../xmlschema/gimnasio.xsd">
+  <nombre>FlexFitness</nombre>
+  <logo>flexfitness_logo.png</logo>
+  <imagen_principal>flexfitness_principal.jpg</imagen_principal>
+  <horarios>
+    <horario>Día: Lunes a Viernes - Horario: 7:00 AM - 11:00 PM</horario>
+    <horario>Día: Sábado - Horario: 9:00 AM - 8:00 PM</horario>
+    <horario>Día: Domingo - Horario: 10:00 AM - 6:00 PM</horario>
+  </horarios>
+  <localizaciones>
+    <localizacion>
+      <nombre_localizacion>Sucursal M</nombre_localizacion>
+      <direccion>Plaza Principal #345, Ciudad M</direccion>
+    </localizacion>
+    <localizacion>
+      <nombre_localizacion>Sucursal N</nombre_localizacion>
+      <direccion>Av. Secundaria #678, Ciudad N</direccion>
+    </localizacion>
+  </localizaciones>
+  <redes_sociales>
+    <facebook>https://facebook.com/flexfitnessC</facebook>
+    <instagram>https://instagram.com/flexfitnessC</instagram>
+    <twitter>https://twitter.com/flexfitnessC</twitter>
+  </redes_sociales>
+</gimnasio>

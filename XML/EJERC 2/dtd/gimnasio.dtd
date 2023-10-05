@@ -1,0 +1,14 @@
+<!ELEMENT gimnasio (nombre, logo, imagen_principal, horarios, localizaciones, redes_sociales)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT imagen_principal (#PCDATA)>
+<!ELEMENT horarios (horario+)>
+<!ELEMENT horario (#PCDATA)>
+<!ELEMENT localizaciones (localizacion+)>
+<!ELEMENT localizacion (nombre_localizacion, direccion)>
+<!ELEMENT nombre_localizacion (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT redes_sociales (facebook, instagram, twitter)>
+<!ELEMENT facebook (#PCDATA)>
+<!ELEMENT instagram (#PCDATA)>
+<!ELEMENT twitter (#PCDATA)>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gimnasio xmlns="http://tempuri.org/gimnasio"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://tempuri.org/gimnasio ../xmlschema/gimnasio.xsd">
+  <nombre>PowerGym</nombre>
+  <logo>powergym_logo.png</logo>
+  <imagen_principal>powergym_principal.jpg</imagen_principal>
+  <horarios>
+    <horario>Día: Lunes a Sábado - Horario: 7:00 AM - 11:00 PM</horario>
+    <horario>Día: Domingo - Horario: 9:00 AM - 9:00 PM</horario>
+  </horarios>
+  <localizaciones>
+    <localizacion>
+      <nombre_localizacion>Sucursal X</nombre_localizacion>
+      <direccion>Av. Principal #789, Ciudad X</direccion>
+    </localizacion>
+    <localizacion>
+      <nombre_localizacion>Sucursal Y</nombre_localizacion>
+      <direccion>Av. Central #012, Ciudad Y</direccion>
+    </localizacion>
+  </localizaciones>
+  <redes_sociales>
+    <facebook>https://facebook.com/powergymB</facebook>
+    <instagram>https://instagram.com/powergymB</instagram>
+    <twitter>https://twitter.com/powergymB</twitter>
+  </redes_sociales>
+</gimnasio>

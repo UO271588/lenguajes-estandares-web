@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para los nodos y la tabla en general */
+.graph-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Estilos para las divisiones (divs) */
+div div {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para los campos de texto */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+}
+
+div {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+}
+
+/* Estilos para el botón de carga personalizado */
+div label {
+    display: inline-block;
+    background-color: #008CBA;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos para el campo de tipo file oculto */
+div input[type="file"] {
+    font-size: 20px;
+    display: none;
+}
+
+/* Cambiar el color del botón al pasar el ratón por encima */
+div label:hover {
+    background-color: #005f6b;
+}
+
+/* Cambiar el color del texto en los campos de texto cuando están enfocados */
+input[type="text"]:focus {
+    outline-color: #008CBA;
+}

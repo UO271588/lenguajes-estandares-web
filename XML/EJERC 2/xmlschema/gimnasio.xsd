@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/gimnasio" elementFormDefault="qualified" targetNamespace="http://tempuri.org/gimnasio" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="gimnasio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre" />
+        <xs:element ref="logo" />
+        <xs:element ref="imagen_principal" />
+        <xs:element ref="horarios" />
+        <xs:element ref="localizaciones" />
+        <xs:element ref="redes_sociales" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre" type="xs:string" />
+  <xs:element name="logo" type="xs:string" />
+  <xs:element name="imagen_principal" type="xs:string" />
+  <xs:element name="horarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="horario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="horario" type="xs:string" />
+  <xs:element name="localizaciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="localizacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="localizacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre_localizacion" />
+        <xs:element ref="direccion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre_localizacion" type="xs:string" />
+  <xs:element name="direccion" type="xs:string" />
+  <xs:element name="redes_sociales">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="facebook" />
+        <xs:element ref="instagram" />
+        <xs:element ref="twitter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="facebook" type="xs:string" />
+  <xs:element name="instagram" type="xs:string" />
+  <xs:element name="twitter" type="xs:string" />
+</xs:schema>
