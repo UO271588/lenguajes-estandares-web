@@ -3,6 +3,7 @@
 <gimnasio xmlns="http://tempuri.org/gimnasio"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://tempuri.org/gimnasio ../xmlschema/gimnasio.xsd">
+           <color>#E0C53C</color>
   <nombre>FlexFitness</nombre>
   <logo>flexfitness_logo.png</logo>
   <imagen_principal>flexfitness_principal.jpg</imagen_principal>

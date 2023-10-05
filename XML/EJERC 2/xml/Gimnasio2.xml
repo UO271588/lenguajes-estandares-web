@@ -2,6 +2,7 @@
 <gimnasio xmlns="http://tempuri.org/gimnasio"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://tempuri.org/gimnasio ../xmlschema/gimnasio.xsd">
+           <color>#E03794</color>
   <nombre>PowerGym</nombre>
   <logo>powergym_logo.png</logo>
   <imagen_principal>powergym_principal.jpg</imagen_principal>

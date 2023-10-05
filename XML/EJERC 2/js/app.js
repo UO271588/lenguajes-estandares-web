@@ -11,9 +11,8 @@ class Convertidor {
 
         var horarios = '';
         this.$xml.find('horario').each(function () {
-            var dia = $(this).prev().text(); // Obtener el día del elemento anterior
             var horario = $(this).text();
-            horarios += `<li>${dia}: ${horario}</li>`;
+            horarios += `<li>${horario}</li>`;
         });
 
         var localizaciones = '';
@@ -33,31 +32,44 @@ class Convertidor {
         var twitter = this.$xml.find('twitter').text();
 
         var html = `
-            <section>
-                <h2>${nombre}</h2>
-                <img src="${logo}" alt="Logo">
-            </section>
-            <section>
-                <h2>Bienvenido a ${nombre}</h2>
-                <img src="${imagenPrincipal}" alt="Imagen Principal">
-            </section>
-            <section>
-                <h2>Horarios</h2>
-                <ul>${horarios}</ul>
-            </section>
-            <section>
-                <h2>Localizaciones</h2>
-                <ul>${localizaciones}</ul>
-            </section>
-            <section>
-                <h2>Redes Sociales</h2>
-                <p>Facebook: ${facebook}</p>
-                <p>Instagram: ${instagram}</p>
-                <p>Twitter: ${twitter}</p>
-            </section>
+            <!DOCTYPE html>
+            <html lang="es">
+            <head>
+                <meta charset="UTF-8">
+                <title>${nombre}</title>
+            </head>
+            <body>
+                <header>
+                    <h1>${nombre}</h1>
+                    <img src="${logo}" alt="Logo">
+                </header>
+                <section>
+                    <h2>Bienvenido a ${nombre}</h2>
+                    <img src="${imagenPrincipal}" alt="Imagen Principal">
+                </section>
+                <section>
+                    <h2>Horarios</h2>
+                    <ul>${horarios}</ul>
+                </section>
+                <section>
+                    <h2>Localizaciones</h2>
+                    <ul>${localizaciones}</ul>
+                </section>
+                <footer>
+                    <h2>Redes Sociales</h2>
+                    <p>Facebook: ${facebook}</p>
+                    <p>Instagram: ${instagram}</p>
+                    <p>Twitter: ${twitter}</p>
+                </footer>
+            </body>
+            </html>
         `;
 
-        return html;
+        const blob = new Blob([html], { type: 'application/html' });
+        const link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.download = nombre + ".html";
+        link.click();
     }
 }
 
@@ -70,8 +82,7 @@ $(document).ready(function () {
             reader.onload = function (e) {
                 var xmlContent = e.target.result;
                 var convertidor = new Convertidor(xmlContent);
-                var html = convertidor.generarHTML();
-                $('#resultado').html(html);
+                convertidor.generarHTML();
             }
             reader.readAsText(file);
         }

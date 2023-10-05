@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gimnasio xmlns="http://tempuri.org/gimnasio"
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://tempuri.org/gimnasio ../xmlschema/gimnasio.xsd">
-  <nombre>GymFit</nombre>
-  <logo>gymfit_logo.png</logo>
-  <imagen_principal>gymfit_principal.jpg</imagen_principal>
-  <horarios>
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://tempuri.org/gimnasio ../xmlschema/gimnasio.xsd">
+    <color>#47A4DE</color>
+    <nombre>GymFit</nombre>
+    <logo>gymfit_logo.png</logo>
+    <imagen_principal>gymfit_principal.jpg</imagen_principal>
+    <horarios>
     <horario>Día: Lunes a Viernes - Horario: 6:00 AM - 10:00 PM</horario>
     <horario>Día: Sábado - Horario: 8:00 AM - 8:00 PM</horario>
     <horario>Día: Domingo - Horario: 9:00 AM - 6:00 PM</horario>
-  </horarios>
-  <localizaciones>
+    </horarios>
+    <localizaciones>
     <localizacion>
-      <nombre_localizacion>Sucursal A</nombre_localizacion>
-      <direccion>Calle Principal #123, Ciudad A</direccion>
+        <nombre_localizacion>Sucursal A</nombre_localizacion>
+        <direccion>Calle Principal #123, Ciudad A</direccion>
     </localizacion>
     <localizacion>
-      <nombre_localizacion>Sucursal B</nombre_localizacion>
-      <direccion>Av. Secundaria #456, Ciudad A</direccion>
+        <nombre_localizacion>Sucursal B</nombre_localizacion>
+        <direccion>Av. Secundaria #456, Ciudad A</direccion>
     </localizacion>
-  </localizaciones>
-  <redes_sociales>
+    </localizaciones>
+    <redes_sociales>
     <facebook>https://facebook.com/gymfitA</facebook>
     <instagram>https://instagram.com/gymfitA</instagram>
     <twitter>https://twitter.com/gymfitA</twitter>
-  </redes_sociales>
+    </redes_sociales>
 </gimnasio>
