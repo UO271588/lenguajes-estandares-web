@@ -35,7 +35,7 @@ function displayResults(results) {
         results.forEach(result => {
             var listItem = document.createElement("li");
             var link = document.createElement("a");
-            link.href = result.textContent;
+            link.href = result.getElementsByTagName(loc)[0].textContent;
             link.target = "_blank"; // Abre el enlace en una nueva pestaña
             link.textContent = result.getElementsByTagName(loc)[0].textContent;
             listItem.appendChild(link);
