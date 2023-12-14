@@ -17,7 +17,7 @@ function search() {
             var urls = xmlDoc.getElementsByTagName("url");
 
             // Filtrar las URL que contienen el término de búsqueda
-            var matchingUrls = Array.from(urls).filter(url => url.textContent.toLowerCase().includes(searchTerm));
+            var matchingUrls = Array.from(urls).filter(url => url.getElementsByTagName(textContent)[0].textContent.toLowerCase().includes(searchTerm));
 
             // Mostrar los resultados en la lista de enlaces
             displayResults(matchingUrls);
