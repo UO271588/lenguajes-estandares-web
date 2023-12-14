@@ -6,7 +6,7 @@ function search() {
     var searchTerm = document.getElementById("searchInput").value.toLowerCase();
 
     // Utilizar fetch para cargar el sitemap.xml de forma asíncrona
-    fetch("file:///C:/Users/34686/Downloads/UO271588_HTML_CSS/UO271588_HTML_CSS/EJERC%201/html/sitemap.xml")  // Reemplaza con la ruta correcta
+    fetch("sitemap.xml")  // Reemplaza con la ruta correcta
         .then(response => response.text())
         .then(sitemapContent => {
             // Parsear el contenido del sitemap.xml
