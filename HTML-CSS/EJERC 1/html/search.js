@@ -17,7 +17,7 @@ function search() {
             var urls = xmlDoc.getElementsByTagName("url");
 
             // Filtrar las URL que contienen el término de búsqueda
-            var matchingUrls = Array.from(urls).filter(url => url.getElementsByTagName(textContent)[0].textContent.toLowerCase().includes(searchTerm));
+            var matchingUrls = Array.from(urls).filter(url => url.getElementsByTagName("textContent")[0].textContent.toLowerCase().includes(searchTerm));
 
             // Mostrar los resultados en la lista de enlaces
             displayResults(matchingUrls);
@@ -35,9 +35,9 @@ function displayResults(results) {
         results.forEach(result => {
             var listItem = document.createElement("li");
             var link = document.createElement("a");
-            link.href = result.getElementsByTagName(loc)[0].textContent;
+            link.href = result.getElementsByTagName("loc")[0].textContent;
             link.target = "_blank"; // Abre el enlace en una nueva pestaña
-            link.textContent = result.getElementsByTagName(loc)[0].textContent;
+            link.textContent = result.getElementsByTagName("loc")[0].textContent;
             listItem.appendChild(link);
             resultsList.appendChild(listItem);
         });
