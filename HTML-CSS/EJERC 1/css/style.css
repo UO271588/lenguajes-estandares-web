@@ -23,9 +23,6 @@ h1 {
 nav {
     background-color: darkred;
     color: white;
-}
-
-nav {
     padding: 15px;
 }
 
@@ -40,6 +37,31 @@ nav a:link, nav a:visited, nav a:valid{
     color: white;
 }
 
+nav div input{
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 0.5em 0 0 0.5em;
+    border-style: solid;
+    border-right: none;
+    padding: 0 1em;
+    font-weight: bold;
+    
+}
+
+nav div button{
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 0 0.5em 0.5em 0;
+    border: 1px black solid;
+    padding: 0 1em;
+    font-weight: bold;
+}
+
+nav div button:hover{
+    border-color: white;
+    color:white;
+    background-color: grey;
+}
 
 /* Seccion de perfil */
 h2 {

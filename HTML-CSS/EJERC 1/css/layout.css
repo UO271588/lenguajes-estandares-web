@@ -4,13 +4,17 @@ header {
     justify-content: center;
 }
 
-/* Barra de navegación */
-nav ul {
+nav {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-direction: row;
+}
+
+nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
+    margin-left: auto;
 }
 
 body{
