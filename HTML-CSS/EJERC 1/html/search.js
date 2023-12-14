@@ -37,7 +37,7 @@ function displayResults(results) {
             var link = document.createElement("a");
             link.href = result.textContent;
             link.target = "_blank"; // Abre el enlace en una nueva pestaña
-            link.textContent = result.textContent;
+            link.textContent = result.getElementsByTagName(loc)[0].textContent;
             listItem.appendChild(link);
             resultsList.appendChild(listItem);
         });
