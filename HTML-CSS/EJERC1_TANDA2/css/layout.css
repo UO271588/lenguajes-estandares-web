@@ -73,3 +73,32 @@ article:nth-of-type(2) img{
     margin-right: -10px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 1000px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav div {
+        margin-left: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    
+    article {
+        width: 100%;
+        box-sizing: border-box;
+        margin-inline: 0;
+    }
+
+    section {
+        width: 100%;
+        box-sizing: border-box;
+        margin-inline: 0;
+    }
+}

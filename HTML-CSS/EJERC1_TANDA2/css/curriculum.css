@@ -47,3 +47,10 @@ section > section h3, section > section span {
     text-align: center;
     margin: 0px;
 }
+
+@media (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}

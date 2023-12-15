@@ -23,11 +23,12 @@ h1 {
 nav {
     background-color: darkred;
     color: white;
-    padding: 15px;
+    padding: 1.2rem;
 }
 
 nav a {
     padding: 7px 10px;
+    font-size: 1.5rem;
 }
 
 nav a:link, nav a:visited, nav a:valid{
@@ -35,6 +36,11 @@ nav a:link, nav a:visited, nav a:valid{
     text-decoration: none;
     background-color: darkred;
     color: white;
+}
+
+nav div label {
+    font-size: 1.2rem;
+    padding-right: 1rem;
 }
 
 nav div input{
@@ -45,7 +51,7 @@ nav div input{
     border-right: none;
     padding: 0 1em;
     font-weight: bold;
-    
+    font-size: 1.2rem;
 }
 
 nav div button{
@@ -55,6 +61,7 @@ nav div button{
     border: 1px black solid;
     padding: 0 1em;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 nav div button:hover{
@@ -65,6 +72,7 @@ nav div button:hover{
 
 /* Seccion de perfil */
 h2 {
+    font-size: 1.5rem;
     padding: 10px 10px;
     margin:0;
     background-color: darkred;
@@ -73,7 +81,7 @@ h2 {
 
 p {
     padding: 7px 10px;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 img {
@@ -85,4 +93,10 @@ section, article, aside{
     margin: 0.5em 0.5em 0.5em 0.5em;
     background-color: #f9f9f9;
     color: black;
+}
+
+@media (max-width: 1000px) {
+    section, article, aside{
+        margin-inline: 0;
+    }
 }
