@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Header de la página*/
+header, h1{
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    margin: 40px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: darkred;
+    color: white;
+    padding: 1rem 0.8rem;
+}
+
+nav a {
+    padding: 7px 10px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a img {
+    width: 20px;
+    height: 20px;
+    color: white;
+    padding: 5px;
+}
+
+nav a:link, nav a:visited, nav a:valid{
+    font-weight: bold;
+    text-decoration: none;
+    background-color: darkred;
+    color: white;
+}
+
+nav div label {
+    font-size: 1.1rem;
+    padding-right: 1rem;
+}
+
+nav div input{
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 0.5em 0 0 0.5em;
+    border-style: solid;
+    border-right: none;
+    padding: 0 1em;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav div button{
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 0 0.5em 0.5em 0;
+    border: 1px black solid;
+    padding: 0 1em;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav div button:hover{
+    border-color: white;
+    color:white;
+    background-color: grey;
+}
+
+/* Seccion de perfil */
+h2 {
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    margin:0;
+    background-color: darkred;
+    color: white;
+}
+
+p {
+    padding: 7px 10px;
+    font-size: 1rem;
+}
+
+img {
+    display: block;
+    width: 300px;
+}
+
+section, article, aside{
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    section, article, aside{
+        margin-inline: 0;
+    }
+}

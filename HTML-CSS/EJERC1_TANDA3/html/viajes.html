@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="author" content="Eloy Alfredo Schmidt Rodríguez - UO271588">
+    <title>UO271588 - Viajes</title>
+
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/viajes.css">
+</head>
+
+<body>
+    <header>
+        <h1> Viajes </h1>
+    </header>
+    <nav>
+        <a href="index.html" target="_self"> Inicio </a>
+        <a href="aficiones.html" target="_self"> Aficiones </a>
+        <a href="curriculum.html" target="_self"> Curriculum </a>
+        <a href="viajes.html" target="_self"> Viajes </a>
+        <div>
+            <label for="searchInput">Buscador:</label>
+            <input type="text" id="searchInput" placeholder="Ingrese término de búsqueda">
+            <button onclick="search()">Buscar</button>
+        </div>
+    </nav>
+    <main>
+        <section id="results">
+            <h2>Resultados de la busqueda</h2>
+            <ul id="resultsList"></ul>
+        </section>
+        <script src="search.js"></script>
+        <section>
+            <h2>Valencia</h2>
+            <img src="../multimedia/valencia.jpg" alt="Imagen de Valencia">
+            <p>Un viaje corto de un fin de semana para vistar amigos que tengo por allí y de paso ver las fallas de Valencia en todo su esplendor.</p>
+        </section>
+        <section>
+            <h2>Japón</h2>
+            <img src="../multimedia/japon.jpg" alt="Imagen de Japón">
+            <p>Viaje de 23 días en el mes de Septiembre con amigos para ver y disfrutar de todo lo que puede ofrecer el país Nipon. Volvería encantado a una tierra llena de culturas, tradiciones y buena gente.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Eloy Alfredo Schmidt Rodríguez</p>
+    </footer>
+</body>
+
+</html>
